@@ -69,16 +69,11 @@ public class SpeelKaart {
 
     public String toonWaarde() {
         switch (waarde) {
-            case TWEE:
-            case DRIE:
-            case VIER:
-            case VIJF:
-            case ZES:
-            case ZEVEN:
-            case ACHT:
-            case NEGEN:
-            case TIEN: return String.format("%s %d\n", kleur.toString(),getGetalWaarde());
-            default: return toString();
+            case AAS:
+            case DAME:
+            case HEER:
+            case BOER: return toString();
+            default: return String.format("%s %d\n", kleur.toString(),getGetalWaarde());
         }
     }
 }

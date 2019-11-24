@@ -1,13 +1,15 @@
+import static Speelkaart.SpeelKaart.KaartKleur.*;
+import static Speelkaart.SpeelKaart.KaartWaarde.*;
 import Speelkaart.*;
 
 public class TestSpeelKaart {
     public static void main(String[] args) {
-        SpeelKaart kaart = new SpeelKaart(SpeelKaart.KaartKleur.HARTEN,
-                SpeelKaart.KaartWaarde.ZEVEN);
+        SpeelKaart kaart = new SpeelKaart(HARTEN,
+                ZEVEN);
         System.out.println(kaart.getKleur() + " " + kaart.getWaarde() +
                 " " + kaart.getGetalWaarde());
-        kaart.setKaart(SpeelKaart.KaartKleur.RUITEN,
-                SpeelKaart.KaartWaarde.TIEN);
+        kaart.setKaart(RUITEN,
+                TIEN);
         System.out.println(kaart.toonWaarde());
         // versie 1
         System.out.println("\nAlles in letters:");
